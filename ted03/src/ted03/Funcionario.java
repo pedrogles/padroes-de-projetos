@@ -2,15 +2,13 @@ package ted03;
 
 public class Funcionario extends Pessoa {
     private int matricula;
-    private String cargo;
     private int salario;
     private String dataAdmissao;
     // Constructor
     public Funcionario(String nome, String dataNascimento, String endereco, String tel,
                        int matricula, String cargo, int salario, String dataAdmissao) {
-        super(nome, dataNascimento, endereco, tel);
+        super(nome, dataNascimento, endereco, tel, cargo);
         this.matricula = matricula;
-        this.cargo = cargo;
         this.salario = salario;
         this.dataAdmissao = dataAdmissao;
     }
@@ -21,14 +19,6 @@ public class Funcionario extends Pessoa {
 
     public void setMatricula(int matricula) {
         this.matricula = matricula;
-    }
-
-    public String getCargo() {
-        return cargo;
-    }
-
-    public void setCargo(String cargo) {
-        this.cargo = cargo;
     }
 
     public int getSalario() {
