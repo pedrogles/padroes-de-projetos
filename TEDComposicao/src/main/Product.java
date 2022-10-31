@@ -15,8 +15,8 @@ public class Product {
         if ((this.getDayHour().getHour() >= 20) &&
         ((this.getDayHour().getMin() + this.getDayHour().getSec()) > 0)) {
             finalPrice = finalPrice - (finalPrice / 10);
-        } else if (this.getDayHour().getDayOfWeek() == "SEGUNDA"
-                || this.getDayHour().getDayOfWeek() == "DOMINGO") {
+        } else if (this.getDayHour().getDayOfWeek().equals("SABADO")
+                || this.getDayHour().getDayOfWeek().equals("DOMINGO")) {
             finalPrice = finalPrice - (finalPrice / 10);
         }
         return finalPrice;
