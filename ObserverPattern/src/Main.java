@@ -20,9 +20,11 @@ public class Main {
         test.removeObserver(student2);
         test.removeObserver(student3);
 
-        test.notifyObserver("Padrão de Projetos");
+        test.notifyObserver("Tecnologias para Back-end 2");
 
         /*
+        test.removeObserver(student2);
+        test.removeObserver(student3);
         test.notifyObserver("Padrão de Projetos");
         test.notifyObserver("Tecnologias para Back-end 2");
         test.notifyObserver("Acessibilidade e Tecnologias Assistivas");
